@@ -1,0 +1,12 @@
+$('.click-me').on('click',function(e){
+  e.stopPropagation();
+  $('.popover-in').show();
+  setTimeout(function(){
+    $('.popover').one('click',function(e){
+      e.stopPropagation();
+    })
+    $(document).one('click',function(){
+      $('.popover-in').hide();
+    });
+  },0);
+});
