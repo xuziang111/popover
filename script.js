@@ -15,6 +15,3 @@ $('.click-me').on('click',function(e){
   }
       n++;
 });
- $(document).one('click',function(){
-     m++;
-});
